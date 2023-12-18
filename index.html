@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/47f948ddb7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-1.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span id="u_name">Mishal Kandanath</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and innovative Computer Science and Engineering graduate with a proven track
+                        record of academic
+                        excellence and a strong passion for leveraging technology to solve real-world challenges. Adept
+                        at programming and project
+                        management, with hands-on experience in diverse technologies. Eager to contribute expertise to
+                        cutting-edge projects in the
+                        technical industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br><br> Java, Python, HTML, JavaScript</li>
+                            <li><span>Technologies</span><br> <br>React, Hibernate, CSS, JDBC, Latex, Word</li>
+                            <li><span>Databases </span><br><br> MySql, MongoDB</li>
+                            <li><span>Version Control </span><br><br> Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>KodNest &nbsp; </span><small style="color: rgb(255, 255, 255); font-size: 15px;">Bangalore</small>
+                                <br><br> Internship in Java Full Stack</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MEA Engineering College &nbsp;</span>
+                                <small style="color: azure;font-size: 15px;"> Perinthalmanna,Malappuram</small> <br> <br> Bachelor of Technology in Computer
+                                Science and Engineering </li>
+                            <li><span>PKMMHSS</span>&nbsp; <small style="color: azure;font-size: 15px;">Edarikode</small> <br><br>Higher Secondary  </li>
+                            <li><span>PKMMHSS</span> &nbsp;<small style="color: azure;font-size: 15px;">Edarikode</small> <br><br>SSLC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------services------------- -->
+
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web app development</h2>
+                    <p>Designing and Developing dynamic web apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Designing and Developing dynamic web apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>Web site development</h2>
+                    <p>Designing and Developing dynamic web apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+    <!-- ---------------------portfolio----------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/deep learning.jpg">
+                    <div class="layer">
+                        <h3>Deep Learning-based Auto Accident Detection and Alert System for Vehicles</h3>
+                        <p>Developed a cutting-edge deep learning system for real-time accident detection through CCTV cameras. Implemented
+                            advanced algorithms to detect and analyze accidents with high accuracy.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ERP-web.jpg" >
+                    <div class="layer">
+                        <h3>Project Management System</h3>
+                        <p>Successfully designed and implemented a web-based portal for managing and controlling student projects. Coordinated
+                            and guided students throughout the project by providing them with a login facility. Enabled students to easily upload their
+                            project reports into the system. Facilitated seamless communication between students and project coordinators.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/publication (2).jpg">
+                    <div class="layer">
+                        <h3> <strong>PUBLICATION </strong> <br>Deep Learning-based Auto Accident Detection and Alert System for Vehicles</h3>
+                        <p>Mishal Kandanath,Misbah A,Dr Shanid Malayil,Murshida.K.P,Mohammed Binshad,Mohammed Rizvin K.V, "Deep Learning-based
+                            Auto Accident Detection and Alert System for Vehicles", 2023 International Conference on Innovations in Engineering and
+                            Technology (ICIET) DOI: 10.1109/ICIET57285.2023.10220752.</p>
+                        <a href="https://ieeexplore.ieee.org/document/10220752"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/mishal-22" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!-- -----------------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mishalknd@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +917025723988</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mishal-k-382603258/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Mishal Kandanath - BTech.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = 0;
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5wYAfsNMbVngY2kSv3VfzK9_1pdPhEQYWk9kmpphY5qb17i3yby5-226UjS42FHp4bQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
